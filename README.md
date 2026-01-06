@@ -29,7 +29,7 @@ sudo pacman -S cachyos-gaming-applications cachyos-gaming-meta
 ## Rust setup
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-. "$HOME/.cargo/env"
+source "$HOME/.cargo/env.fish"
 ```
 
 ## Install Node.js with nvm
