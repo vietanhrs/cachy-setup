@@ -11,6 +11,11 @@ sudo pacman -Sy archlinux-keyring cachyos-keyring && sudo pacman -Su
 sudo pacman -S waybar hyprpaper hyprlauncher
 ```
 
+### Essential tools
+```bash
+sudo pacman -S zip
+```
+
 ## Yay and Google Chrome + VS Code
 ```bash
 sudo pacman -S --needed base-devel git
