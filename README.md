@@ -1,59 +1,34 @@
 # cachy-setup
 My Setup for the Cachy OS Linux Distro
-```ansi
-           .-------------------------:
-          .+=========================.
-         :++===++==================-       :++-
-        :*++====+++++=============-        .==:
-       -*+++=====+***++==========:
-      =*++++========------------:
-     =*+++++=====-                     ...
-   .+*+++++=-===:                    .=+++=:
-  :++++=====-==:                     -*****+
- :++========-=.                      .=+**+.
-.+==========-.                          .
- :+++++++====-                                .--==-.
-  :++==========.                             :+++++++:
-   .-===========.                            =*****+*+
-    .-===========:                           .+*****+:
-      -=======++++:::::::::::::::::::::::::-:  .---:
-       :======++++====+++******************=.
-        :=====+++==========++++++++++++++*-
-         .====++==============++++++++++*-
-          .===+==================+++++++:
-           .-=======================+++:
-             ..........................[1G[21A[58Canhtv@nitrocachy
-[58C----------------
-[58COS: CachyOS x86_64
-[58CHost: Nitro ANV15-51 (V1.26)
-[58CKernel: Linux 6.18.3-2-cachyos
-[58CUptime: 8 hours, 9 mins
-[58CPackages: 1445 (pacman)
-[58CShell: fish 4.3.3
-[58CDisplay (Samsung Electric Company 23"): 1920x1080 in 23", 60 Hz [External] *
-[58CDisplay (BOE0B02): 1920x1080 in 15", 144 Hz [Built-in]
-[58CDE: GNOME 49.2
-[58CWM: Mutter (Wayland)
-[58CWM Theme: Adwaita
-[58CTheme: Adwaita [GTK2/3/4]
-[58CIcons: Adwaita [GTK2/3/4]
-[58CFont: SauceCodePro Nerd Font Medium (11pt) [GTK2/3/4]
-[58CCursor: Adwaita (24px)
-[58CTerminal: ghostty 1.2.3-arch2.1
-[58CTerminal Font: Source Code Pro Medium (10pt)
-[58CCPU: 13th Gen Intel(R) Core(TM) i7-13620H (16) @ 4.90 GHz
-[58CGPU 1: NVIDIA GeForce RTX 2050 [Discrete]
-[58CGPU 2: Intel UHD Graphics @ 1.50 GHz [Integrated]
-[58CMemory: 7.79 GiB / 23.17 GiB (34%)
-[58CSwap: 22.36 MiB / 23.17 GiB (0%)
-[58CDisk (/): 111.79 GiB / 466.41 GiB (24%) - ext4
-[58CLocal IP (wlan0): 192.168.2.12/24
-[58CBattery (AP18E7M): 100% [AC Connected]
-[58CLocale: en_US.UTF-8
-[58C
-[58C[40m   [41m   [42m   [43m   [44m   [45m   [46m   [47m   [m
-[58C[100m   [101m   [102m   [103m   [104m   [105m   [106m   [107m   [m
-
+```
+           .-------------------------:                    anhtv@nitrocachy
+          .+=========================.                    ----------------
+         :++===++==================-       :++-           OS: CachyOS x86_64
+        :*++====+++++=============-        .==:           Host: Nitro ANV15-51 (V1.26)
+       -*+++=====+***++==========:                        Kernel: Linux 6.18.3-2-cachyos
+      =*++++========------------:                         Uptime: 8 hours, 13 mins
+     =*+++++=====-                     ...                Packages: 1445 (pacman)
+   .+*+++++=-===:                    .=+++=:              Shell: fish 4.3.3
+  :++++=====-==:                     -*****+              Display (Samsung Electric Company 23"): 1920x1080 in 23", 60 Hz [External] *
+ :++========-=.                      .=+**+.              Display (BOE0B02): 1920x1080 in 15", 144 Hz [Built-in]
+.+==========-.                          .                 DE: GNOME 49.2
+ :+++++++====-                                .--==-.     WM: Mutter (Wayland)
+  :++==========.                             :+++++++:    WM Theme: Adwaita
+   .-===========.                            =*****+*+    Theme: Adwaita [GTK2/3/4]
+    .-===========:                           .+*****+:    Icons: Adwaita [GTK2/3/4]
+      -=======++++:::::::::::::::::::::::::-:  .---:      Font: SauceCodePro Nerd Font Medium (11pt) [GTK2/3/4]
+       :======++++====+++******************=.             Cursor: Adwaita (24px)
+        :=====+++==========++++++++++++++*-               Terminal: ghostty 1.2.3-arch2.1
+         .====++==============++++++++++*-                Terminal Font: Source Code Pro Medium (10pt)
+          .===+==================+++++++:                 CPU: 13th Gen Intel(R) Core(TM) i7-13620H (16) @ 4.90 GHz
+           .-=======================+++:                  GPU 1: NVIDIA GeForce RTX 2050 [Discrete]
+             ..........................                   GPU 2: Intel UHD Graphics @ 1.50 GHz [Integrated]
+                                                          Memory: 8.14 GiB / 23.17 GiB (35%)
+                                                          Swap: 22.36 MiB / 23.17 GiB (0%)
+                                                          Disk (/): 111.79 GiB / 466.41 GiB (24%) - ext4
+                                                          Local IP (wlan0): 192.168.2.12/24
+                                                          Battery (AP18E7M): 100% [AC Connected]
+                                                          Locale: en_US.UTF-8
 ```
 
 ## GNOME Extensions
