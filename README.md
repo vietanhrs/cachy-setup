@@ -31,26 +31,26 @@ My Setup for the Cachy OS Linux Distro
                                                           Locale: en_US.UTF-8
 ```
 
+## Update keyring and system update
+```bash
+sudo pacman -Sy archlinux-keyring cachyos-keyring && sudo pacman -Su
+```
+
+## Essential tools
+```bash
+sudo pacman -S zip gnome-browser-connector ghostty discord
+```
+
 ## GNOME Extensions
 - [App Indicators](https://extensions.gnome.org/extension/615/appindicator-support/)
 - [Apps Menu](https://extensions.gnome.org/extension/6/applications-menu/)
-- [Arc Menu](https://extensions.gnome.org/extension/6/applications-menu/)
+- [Arc Menu](https://extensions.gnome.org/extension/3628/arcmenu/)
 - [Blur My Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
 - [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 - [Dash To Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [Lockscreen Extension](https://extensions.gnome.org/extension/7472/lockscreen-extension/)
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
-
-## Update keyring and system update
-```bash
-sudo pacman -Sy archlinux-keyring cachyos-keyring && sudo pacman -Su
-```
-
-### Essential tools
-```bash
-sudo pacman -S zip gnome-browser-connector ghostty discord
-```
 
 ## Yay and Google Chrome + VS Code
 ```bash
@@ -86,7 +86,8 @@ npm install -g corepack
 ## Git setup
 ```bash
 ssh-keygen -t ed25519 -C "vietanhtran.uet@gmail.com"
-set SSH_AUTH_SOCK /home/anhtv/.ssh/agent/<only_file_here>
+eval "$(ssh-agent -s)"
+set SSH_AUTH_SOCK /home/anhtv/.ssh/agent/<output_of_the_previous_command>
 ssh-add ~/.ssh/id_ed25519
 cat ~/.ssh/id_ed25519.pub
 git config --global user.name "vietanhrs"
@@ -99,9 +100,14 @@ sudo pacman -S ttf-sourcecodepro-nerd adobe-source-code-pro-fonts
 fc-cache -fv
 ```
 
-## Install ibus-bamboo for Vietnamese typing
+## Install fcitx5 for Vietnamese typing
 ```bash
-yay -S ibus-bamboo
-ibus restart
-env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
+sudo pacman -S fcitx5-im fcitx5-bamboo fcitx5-configtool
+sudo nano /etc/environment
+```
+Add these variables
+```
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
 ```
