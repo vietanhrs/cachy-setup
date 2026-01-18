@@ -111,3 +111,12 @@ GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
 ```
+
+## Install Gruvbox theme for GNOME
+```bash
+yay -S gtk-engine-murrine
+git clone https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme
+cd Gruvbox-GTK-Theme/themes/
+./install.sh -n "Gruvbox-BL-MB"
+# Then set the GNOME theme in Tweaks
+```
