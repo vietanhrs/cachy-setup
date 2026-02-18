@@ -31,6 +31,13 @@ My Setup for the Cachy OS Linux Distro
                                                           Locale: en_US.UTF-8
 ```
 
+## Permanently set the MTU to 1490 to prevent slow page loading
+```bash
+nmcli connection show
+sudo nmcli connection modify "<wifi name>" wifi.mtu 1490
+sudo nmcli connection up "<wifi name>"
+```
+
 ## Update keyring and system update
 ```bash
 sudo pacman -Sy archlinux-keyring cachyos-keyring && sudo pacman -Su
@@ -38,10 +45,12 @@ sudo pacman -Sy archlinux-keyring cachyos-keyring && sudo pacman -Su
 
 ## Essential tools
 ```bash
-sudo pacman -S zip gnome-browser-connector ghostty discord
+sudo pacman -S zip gnome-browser-connector ghostty discord jdk-openjdk flatpak
 ```
 
 ## GNOME Extensions
+Requires: `gnome-browser-connector` installed above
+
 - [App Indicators](https://extensions.gnome.org/extension/615/appindicator-support/)
 - [Apps Menu](https://extensions.gnome.org/extension/6/applications-menu/)
 - [Arc Menu](https://extensions.gnome.org/extension/3628/arcmenu/)
@@ -81,6 +90,7 @@ nvm ls-remote
 nvm install v24 # replace with the latest LTS version
 nvm use v24
 npm install -g corepack
+set --universal nvm_default_version v24 # set default version for new shells
 ```
 
 ## Git setup
