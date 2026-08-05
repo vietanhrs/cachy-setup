@@ -45,7 +45,7 @@ sudo pacman -Sy archlinux-keyring cachyos-keyring && sudo pacman -Su
 
 ## Essential tools
 ```bash
-sudo pacman -S zip gnome-browser-connector ghostty discord jdk-openjdk flatpak
+sudo pacman -S zip gnome-browser-connector gnome-menus ghostty discord jdk-openjdk flatpak
 ```
 
 ## GNOME Extensions
